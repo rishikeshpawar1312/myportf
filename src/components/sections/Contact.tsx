@@ -35,11 +35,14 @@ export const ContactSection: React.FC = () => {
 
     // Message validation
     const message = form.current?.message.value.trim();
-    const wordCount = message.split(/\s+/).length;
     if (!message) {
       errors.message = 'Message is required';
-    } else if (wordCount < 20) {
-      errors.message = 'Message must be at least 20 words';
+    } else {
+      // Fix: Only count non-empty words
+      const wordCount = message.trim().split(/\s+/).filter((word: string | any[]) => word.length > 0).length;
+      if (wordCount < 20) {
+        errors.message = `Message must be at least 20 words (current: ${wordCount} words)`;
+      }
     }
 
     setValidationErrors(errors);
@@ -59,10 +62,10 @@ export const ContactSection: React.FC = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          'service_zto9tbe',    // Replace with your EmailJS service ID
-          'template_4ws0pnc',   // Replace with your EmailJS template ID
+          import.meta.env.VITE_SERVICEID,
+          import.meta.env.VITE_TEMPLATEID,
           form.current,
-          { publicKey: 'xPfXFvWfR0IQJVIu7' } // Replace with your EmailJS public key
+          { publicKey: import.meta.env.VITE_PUBLICKEY }
         )
         .then(
           () => {
@@ -94,7 +97,7 @@ export const ContactSection: React.FC = () => {
   ];
 
   return (
-    <section id="contact"className="bg-white py-16 px-4">
+    <section id="contact" className="bg-white py-16 px-4">
       <div className="max-w-lg mx-auto text-center">
         <h2 className="text-3xl font-bold mb-2">Contact</h2>
         <p className="text-gray-600 mb-8">Fill out the form</p>
