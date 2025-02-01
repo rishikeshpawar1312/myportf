@@ -19,8 +19,8 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', to: 'home' },
     { name: 'About', to: 'About' },
-    { name: 'Projects', to: 'ProjectSection' },
-    { name: 'Skills', to: 'skills' },
+    { name: 'Projects', to: 'project'},
+    { name: 'Skills', to: 'skills' },   
     { name: 'Contact', to: 'contact' },
     { name: 'GitHub', to: 'https://github.com/rishikeshpawar1312', isExternal: true }
   ];

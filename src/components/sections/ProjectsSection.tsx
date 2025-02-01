@@ -40,6 +40,7 @@ const Modal: React.FC<{
   if (!isOpen) return null;
 
   return (
+    <section id='project'> 
     <div className="fixed inset-0 z-50 overflow-y-auto">
       <div className="flex min-h-full items-center justify-center p-4">
         <div className="fixed inset-0 bg-black/30" onClick={onClose} />
@@ -91,6 +92,7 @@ const Modal: React.FC<{
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
@@ -176,6 +178,7 @@ const ProjectCard: React.FC<Project> = ({
 
   return (
     <>
+    <section id='project'> 
       <div className="bg-white border border-black/10 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
         <div className="relative w-full h-52 bg-gradient-to-b from-white">
           {!imageError ? (
@@ -245,6 +248,7 @@ const ProjectCard: React.FC<Project> = ({
         title={title}
         githubLink={githubLink}
       />
+      </section>
     </>
   );
 };
