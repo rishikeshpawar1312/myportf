@@ -125,7 +125,7 @@ const Hero: React.FC<HeroProps> = ({
                       boxShadow: "0 10px 30px -10px rgba(0, 0, 0, 0.2)",
                     }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://drive.google.com/file/d/1tufhjm950JsDeDFfymsFZSiQZJkl1s7T/view"
+                    href="https://drive.google.com/file/d/1SYeHLcIHZesmRZPFSzC9KoaiTPw2p6op/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-bold rounded-lg bg-gradient-to-r from-black to-gray-900 text-white shadow-md transition-all duration-300 ease-out hover:pl-10 hover:pr-6"
