@@ -27,7 +27,7 @@ const ExperienceJourney: React.FC = () => {
       description: [
         "Developing full-stack web applications using React and Node.js",
         "Learning and working with PostgreSQL and MySQL for database management",
-        "Implementing responsive and efficient front-end interfaces",
+        "Learnig Docker and testing library (Jest)",
       ],
     },    
     {

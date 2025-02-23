@@ -18,6 +18,7 @@ import Nextjs from "/src/assets/Nextjs.png";
 import cloudinary from "/src/assets/cloudinary.svg";
 import  prisma from "/src/assets/prisma.svg";
 import  postgress from "/src/assets/postgress.png";
+import  docker from "../../assets/docker.png";
 
 
 
@@ -49,7 +50,9 @@ const Skill = () => {
       { img: cloudinary, name: "Cloudinary" },
       { img: reduxlogo, name: "Redux" },
       { img: reactnative, name: "React Native" },
-      { img:  prisma, name: "Prisma ORM" }
+      { img:  prisma, name: "Prisma ORM" },
+      { img:  docker, name: "Docker" }
+
     ]
   };
 
