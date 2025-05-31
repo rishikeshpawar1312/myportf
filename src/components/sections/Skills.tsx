@@ -19,7 +19,7 @@ import cloudinary from "/src/assets/cloudinary.svg";
 import  prisma from "/src/assets/prisma.svg";
 import  postgress from "/src/assets/postgress.png";
 import  docker from "../../assets/docker.png";
-
+import query from "../../assets/reactquery.svg"
 
 
 const Skill = () => {
@@ -31,7 +31,8 @@ const Skill = () => {
       { img: rlogo, name: "React" },
       { img: typescript, name: "TypeScript" },
       { img: blogo, name: "Bootstrap" },
-      { img: tlogo, name: "Tailwind CSS" }
+      { img: tlogo, name: "Tailwind CSS" },
+      { img: query, name: "React Query" }
     ],
     "Backend": [
       { img: nodelogo, name: "Node.js" },
