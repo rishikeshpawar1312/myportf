@@ -20,7 +20,7 @@ import  prisma from "/src/assets/prisma.svg";
 import  postgress from "/src/assets/postgress.png";
 import  docker from "../../assets/docker.png";
 import query from "../../assets/reactquery.svg"
-
+import java from "../../assets/java.svg"
 
 const Skill = () => {
   const skillsByCategory = {
@@ -43,7 +43,9 @@ const Skill = () => {
     ],
     "Programming": [
       { img: clang, name: "C" },
-      { img: clogo, name: "C++" }
+      { img: clogo, name: "C++" },
+      { img: java, name: "Java" }
+
     ],
     "Tools & Technologies": [
       { img: glogo, name: "GitHub" },

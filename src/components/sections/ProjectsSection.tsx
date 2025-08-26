@@ -315,7 +315,7 @@ const ProjectsSection: React.FC = () => {
           {!showMore ? (
             <button 
               onClick={() => setShowMore(true)}
-              className="text-black font-medium hover:text-black/70 transition-colors"
+              className="text-gray-800 dark:text-gray-200 font-medium hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
             >
               View More Projects
             </button>
