@@ -99,7 +99,7 @@ export const ContactSection: React.FC = () => {
   return (
     <section id="contact" className="bg-white py-16 px-4">
       <div className="max-w-lg mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-2">Contact</h2>
+        <h2 className="text-4xl font-bold mb-6 text-gray-900">Contact</h2>
         <p className="text-gray-600 mb-8">Fill out the form</p>
         <form ref={form} onSubmit={sendEmail} className="space-y-6">
           <div>

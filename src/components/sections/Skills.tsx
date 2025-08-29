@@ -62,7 +62,7 @@ const Skill = () => {
   return (
     <section id="skills" className="py-12">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-10 relative">
+       <h2 className="text-4xl font-bold mb-6 text-gray-900">
           <span className="relative inline-block">
             Skills
             <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 transform -skew-x-12"></div>
